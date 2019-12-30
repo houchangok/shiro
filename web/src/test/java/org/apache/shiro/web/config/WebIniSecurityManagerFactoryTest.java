@@ -52,7 +52,6 @@ public class WebIniSecurityManagerFactoryTest {
 
         WebIniSecurityManagerFactory factory = new WebIniSecurityManagerFactory(ini);
         org.apache.shiro.mgt.SecurityManager sm = factory.getInstance();
-        assertNotNull(sm);
         assertTrue(sm instanceof DefaultWebSecurityManager);
 
         //now assert that all of the default filters exist:
